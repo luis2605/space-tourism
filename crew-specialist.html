@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles-destination.css" />
+    <link rel="stylesheet" href="css/styles-crew.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-hamburger-icon">
+        <img class="logo" src="assets/shared/logo.svg" alt="misison logo" />
+        <img
+          class="hamburger-open"
+          id="hamburger-open-btn"
+          src="assets/shared/icon-hamburger.svg"
+          alt="open menu"
+        />
+        <div class="hamburger-menu hidden" id="hamburger-menu-shown">
+          <img
+            class="hamburger-close"
+            id="hamburger-close-btn"
+            src="assets/shared/icon-close.svg"
+            alt="close button"
+          />
+          <ol class="hamburger-list">
+            <li>
+              <a href="index.html"><span>00</span> Home </a>
+            </li>
+            <li>
+              <a href="destination-moon.html"><span>01</span> Destination </a>
+            </li>
+            <li>
+              <a href="crew-commander.html"> <span>02</span> Crew </a>
+            </li>
+            <li>
+              <a href="#"> <span>03</span>Technology </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <h2 class="destination barlow-condensed">
+        <span class="marked-text">02</span>Meet your crew
+      </h2>
+      <div class="container-destination">
+        <img
+          class="destination-img"
+          src="assets/crew/image-mark-shuttleworth.png"
+        />
+        <div class="line"></div>
+
+        <div class="container-text-destination">
+          <ul class="destination-list">
+            <li>
+              <a href="crew-commander.html"
+                ><img class="icon-b" src="assets/brightness-1.png"
+              /></a>
+            </li>
+            <li>
+              <a href="crew-specialist.html"
+                ><img class="icon-b" src="assets/brightness-1.png"
+              /></a>
+            </li>
+            <li>
+              <a href="crew-pilot.html"
+                ><img class="icon-b" src="assets/brightness-1.png"
+              /></a>
+            </li>
+            <li>
+              <a href="crew-engineer.html"
+                ><img class="icon-b" src="assets/brightness-1.png"
+              /></a>
+            </li>
+          </ul>
+          <h2 class="subtitle">Mission Specialist</h2>
+          <h1 class="title bellefair">Mark Shuttleworth</h1>
+
+          <p class="destination-text">
+            Mark Richard Shuttleworth is the founder and CEO of Canonical, the
+            company behind the Linux-based Ubuntu operating system. Shuttleworth
+            became the first South African to travel to space as a space
+            tourist.
+          </p>
+          <div class="data">
+            <div class="data-one">
+              <p class="barlow-condensed">Avg. distance</p>
+              <h3 class="bellefair">628 mil. km</h3>
+            </div>
+            <div class="data-two">
+              <p class="barlow-condensed">Est. travel time</p>
+              <h3 class="bellefair">3 year</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

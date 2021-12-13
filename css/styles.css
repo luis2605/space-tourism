@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    
+   
+}
+/*General Classes*/
+li{
+    list-style: none;
+}
+span{
+    font-weight: bold;
+    margin-right: 1em;
+}
+/*Layout*/
+@media (min-width:275px) {
+.container{
+    
+    max-width: 375px;
+    margin: 0 auto;
+    background-image: url("../assets/home/background-home-mobile.jpg");
+    background-size:cover;
+    min-height: 42em;
+    color: hsla(231, 79%, 90%, 1);
+    
+}
+.container-hamburger-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    z-index: 1;
+}
+.hamburger-open{
+    width: 7%;
+}
+.logo{
+    width: 9%;
+}
+
+.home-text{
+    text-align: center;
+   
+}
+.home-text h2{
+    font-family: 'Barlow Condensed';
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    padding-top:1.5em;
+    
+    font-weight: normal;
+
+
+}
+.home-text h1 {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5rem;
+    line-height: 6.25rem;
+   padding: .3em 0 0 0;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.home-text p {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: .85rem;
+    line-height: 1.5rem;
+    padding: 1em .5em;
+    margin: 0 1em;
+}
+
+/*Hamburger Menu*/
+
+.hamburger-menu{
+ position: absolute;
+ background: rgba(255, 255, 255, 0.04); 
+ backdrop-filter: blur(81.5485px);
+width: 100%;
+height: 42em;
+margin-left: 6em;
+z-index: 100;
+top: 0;
+
+
+}
+.hamburger-list{
+    padding:  3em;
+}
+.hamburger-list li{
+    padding: 1em ;
+}
+.hamburger-list a  {
+ 
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #fff; 
+    text-decoration: none;
+    font-weight: normal;
+    letter-spacing: 2.7px; 
+
+}
+
+.hamburger-close{
+    margin: 1em 0;
+    margin-left: 14em;
+    
+}
+/*Btn*/
+.btn{
+    font-family: 'Bellefair';
+    color: black;
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 2em 0.5em;
+    display: inline-block;
+    margin-top: 2em;
+    background: #FFFFFF;
+    border-radius: 50%;
+    text-transform: uppercase;
+    transition:ease-out .3s;
+    
+ 
+}
+
+
+.btn:hover {
+    background-color: transparent;
+  border: 3px solid rgba(225, 228, 225, 1);
+  color: #FFFFFF;
+}
+
+/*auxiliary classes*/
+
+.shown{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+}
+/*media queries*/
+
+@media (min-width:768px){
+.container{
+max-width: 768px;
+background-image:url("../assets/home/background-home-tablet.jpg ") ;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+.container-hamburger-icon{
+    padding: 0 0 0 1em;
+}
+.hamburger-open{
+    display: none;
+}
+.hamburger-close{
+    display: none;
+}
+.hamburger-menu{
+    position: relative;
+   display: inline;
+   width: 60%;
+   height: 100%;
+   padding: 1em;
+   margin-left: 0;
+   backdrop-filter: blur(81.5485px);
+}
+.hamburger-list{
+    display: flex;
+    padding: 0 1em 0 3em ;
+   
+    margin: 0;
+}
+
+span {
+    display: none;
+}
+
+.logo{
+    width: 10%;
+    padding: 1em 0 0 1.5em;
+}
+
+.home-text h2{
+    padding-top: 4em;
+    letter-spacing: 1px;
+}
+.home-text p{
+    padding: 1em 10em;
+    font-size: .8em;
+    letter-spacing: 2px;
+}
+
+.hamburger-list a{
+    padding-bottom: 2em;
+    transition: ease-out 500ms;
+  
+}
+
+.hamburger-list a:hover , .hamburger-list a:focus {
+    border-bottom: 1px solid whitesmoke;
+    opacity: 0.8;
+}
+
+}
+@media (min-width:1024px){
+
+    .container{
+        max-width: 1024px;
+        background-image:url("../assets/home/background-home-desktop.jpg ") ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        }
+
+        .home-text{
+            display: flex;
+            padding: 5em 4em 2em 0em;
+            align-items: flex-end;
+            justify-content: space-around;
+        }
+
+.home-text-elements{
+    display: flex;
+    flex-direction: column;
+    width:60%;
+    margin-right: 6em;
+}        
+.home-text h1{
+    font-size: 10rem;
+}        
+.home-text h2{
+    
+    letter-spacing: 1px;
+}
+.home-text p{
+    
+    font-size: 0.9rem;
+    
+    padding: 1em 2em;
+}
+
+
+        .btn{
+            width:15%;
+            margin: 0 2em;
+            
+            
+        }
+        
+}

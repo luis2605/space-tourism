@@ -1,0 +1,195 @@
+
+/*Layout*/
+
+.container{
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+}
+.destination{
+    font-size: 1.2rem;
+    text-align: center;
+    font-style: normal;
+font-weight: normal;
+color: hsla(0, 0%, 100%, 1);
+text-transform: uppercase;
+}
+.marked-text{
+    font-weight: 700;
+    color:darkgrey;
+}
+.destination-img{
+    width: 50%;
+    margin: 2em 6em;
+}
+.destination-list{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 3em 2em  3em;
+}
+.destination-list a{
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(208, 214, 249, 1);
+    padding-bottom: 1em;
+}
+
+.container-text-destination{
+    display: flex;
+    flex-direction: column;
+}
+.title{    
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4rem;
+    line-height: 6.25rem;
+    padding: 0.3em 0 0 0;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.destination-text{
+    padding: 1em ;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 6em;
+    text-align: center;
+}
+.data p {
+    font-size:1rem;
+    margin-bottom: .5em;
+
+}
+.data h3{
+    font-size: 1.8rem;
+    margin-bottom: 1.5em;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+/*Typo*/
+
+.barlow{
+    font-family: 'Barlow', sans-serif;
+}
+.barlow-condensed{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.bellefair{
+    font-family: 'Bellefair', serif;
+}
+
+
+/*Animation celestials*/
+
+.animation-celestials {
+    
+    animation: rotation-celestials 10s infinite linear;
+  }
+
+  @keyframes rotation-celestials {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .destination-list a:hover,
+  .destination-list a:focus {
+    border-bottom: 1px solid whitesmoke;
+    opacity: 0.8;;
+  }
+
+  /*media queries*/
+  @media (min-width:768px){
+    .container{
+    max-width: 768px;
+    background-image:url("../assets/destination/background-destination-tablet.jpg ") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    }
+    .marked-text{
+        display:inline-block ;
+    }
+    .destination{
+        text-align: left;
+        margin: 1.5em 2em;
+    }
+    .destination-img{
+        width: 40%;
+        margin: 1em 15em;
+    }
+    .destination-list{
+        padding: 1em 15em 2em 15em;
+    }
+.destination-text{
+    padding: 1em 6em;
+}
+.data{
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+}
+
+
+@media (min-width:1024px){
+
+    .container{
+        max-width: 1024px;
+    }
+.container-hamburger-icon{
+    
+    margin-left: 2em;
+}
+.logo{
+    width: 8%;
+    padding: 0em 0 0 1.5em;
+}
+.destination{
+    font-size: 1.5rem;
+    margin: 1.5em 2em; 
+    padding: 0 1em;
+}
+
+.container-destination{
+    display: flex;
+    padding: 1em 2em;
+}
+.destination-img{
+    width: 30%;
+    height: 35%;
+    margin: 3em;
+}
+.destination-list{
+    padding: 1em 4em;
+}
+.title {
+    text-align: left;
+    margin-left:  1.4em;
+}
+.destination-text {
+    text-align: justify;
+    padding: 0;
+    margin:1em 6em;
+    padding-bottom: 3em;
+   
+    border-bottom: .7px solid  rgba(255, 255, 255, 0.5);
+}
+.data{
+    padding:5em 1em;
+    text-align: left;
+}
+}
+
+
